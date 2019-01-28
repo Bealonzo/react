@@ -49,5 +49,6 @@ deleteTodo(description) {
       </div>
     );
   }
+  
 }
 export default App;
