@@ -21,7 +21,7 @@ handleChange(e){
 handleSubmit(e) {
   e.preventDefault();
   if (!this.state.newTodoDescription) { return }
-      const newTodo = { description: this.state.newTodoDescription, isCompleted: false };
+  const newTodo = { description: this.state.newTodoDescription, isCompleted: false };
       this.setState({ todos: [...this.state.todos, newTodo], newTodoDescription: '' });
 }
 toggleComplete(index) {
@@ -49,6 +49,6 @@ deleteTodo(description) {
       </div>
     );
   }
-  
+
 }
 export default App;
